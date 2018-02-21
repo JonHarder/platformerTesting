@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://JungleDirtTileSet.tres" type="TileSet" id=1]
-[ext_resource path="res://WorldComplete.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/WorldComplete.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
 
-[node name="World3" type="Node2D"]
+[node name="World3" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -30,7 +30,7 @@ _sections_unfolded = [ "Cell" ]
 [node name="WorldComplete" parent="." index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 608, 160 )
-next_world = "res://Main.tscn"
+next_world = "res://Scenes/Main.tscn"
 
 [node name="Player" parent="." index="2" instance=ExtResource( 3 )]
 
